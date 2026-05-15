@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AERO62520 RSDP Evidence Summary | Lexin Wang</title>
+  <style>
+    :root {
+      --bg:#0a0d11;
+      --card:#121820;
+      --text:#e6ebf0;
+      --muted:#9aa7b2;
+      --brand:#7dd3fc;
+      --line:rgba(255,255,255,.12);
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(900px 600px at 10% -10%, rgba(125,211,252,.16), transparent 60%),
+        radial-gradient(900px 600px at 100% 0%, rgba(167,139,250,.14), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+    main { max-width:1050px; margin:0 auto; padding:42px 22px 70px; }
+    h1 { font-size:clamp(28px,4vw,44px); line-height:1.1; margin:0 0 10px; }
+    h2 { font-size:22px; margin:0 0 12px; }
+    p { color:var(--muted); margin:0 0 12px; }
+    a { color:var(--brand); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .hero, .card {
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.035));
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:22px;
+      box-shadow:0 16px 40px rgba(0,0,0,.35);
+    }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:18px; }
+    .tagrow { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .tag { padding:6px 10px; border-radius:999px; background:rgba(125,211,252,.14); border:1px solid rgba(125,211,252,.25); font-size:13px; }
+    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    .btn { display:inline-block; padding:9px 13px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.05); }
+    ul { margin:8px 0 0 18px; padding:0; color:var(--muted); }
+    li { margin:6px 0; }
+    .section { margin-top:20px; }
+    .small { font-size:14px; color:var(--muted); margin-top:22px; border-top:1px solid var(--line); padding-top:16px; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>AERO62520 RSDP Evidence Summary</h1>
+      <p><strong>Project:</strong> Robotic Systems Design Project — Autonomous Rover System</p>
+      <p><strong>My main contribution:</strong> rover build-up and debugging, LiDAR bring-up, SLAM mapping, ROS 2/Nav2 navigation testing, RViz monitoring, frontier exploration testing, and cyber-security risk analysis support.</p>
+      <div class="tagrow">
+        <span class="tag">ROS 2</span>
+        <span class="tag">Nav2</span>
+        <span class="tag">SLAM Toolbox</span>
+        <span class="tag">RPLIDAR</span>
+        <span class="tag">RViz</span>
+        <span class="tag">Frontier Exploration</span>
+        <span class="tag">Real-robot debugging</span>
+      </div>
+      <div class="links">
+        <a class="btn" href="../assets/rsdp-architecture.jpg" target="_blank" rel="noreferrer">System Architecture</a>
+        <a class="btn" href="../assets/rsdp-rviz.png" target="_blank" rel="noreferrer">RViz Navigation Evidence</a>
+        <a class="btn" href="https://youtu.be/bMjJpDVRCoc" target="_blank" rel="noreferrer">System Demo &amp; Test Video</a>
+        <a class="btn" href="https://github.com/krishnanair2025/Team9_repository" target="_blank" rel="noreferrer">Team GitHub Repository</a>
+      </div>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h2>1. Rover Build-up and Hardware Debugging</h2>
+        <p>Prepared the Leo Rover platform for navigation experiments, including hardware mounting, cable checking, sensor connection checks, power-up tests and real-robot debugging.</p>
+        <p><strong>UK-SPEC evidence:</strong> A2, B3, C1, E2.</p>
+      </article>
+
+      <article class="card">
+        <h2>2. SLAM Mapping and LiDAR Bring-up</h2>
+        <p>Worked on RPLIDAR bring-up, scan filtering, SLAM Toolbox mapping, map-quality checking and RViz-based monitoring to support autonomous localisation and mapping.</p>
+        <p><strong>UK-SPEC evidence:</strong> A2, B2, B3, D2.</p>
+      </article>
+
+      <article class="card">
+        <h2>3. Nav2 Navigation and Frontier Exploration</h2>
+        <p>Tested the ROS 2 navigation pipeline, including Nav2 planning/control, costmap behaviour, TF/odometry consistency, parameter tuning and frontier-exploration behaviour.</p>
+        <p><strong>UK-SPEC evidence:</strong> B1, B2, B3, C1.</p>
+      </article>
+
+      <article class="card">
+        <h2>4. Cyber Security Analysis</h2>
+        <p>Helped analyse cyber-security risks for networked robot components, ROS communication, remote access, device connections and practical security considerations during integration.</p>
+        <p><strong>UK-SPEC evidence:</strong> E1, E2, E5.</p>
+      </article>
+
+      <article class="card">
+        <h2>5. Requirements Verification and Reflection</h2>
+        <p>Used RViz screenshots, logs, demo video evidence and real-robot tests to reflect on whether the mapping and navigation system met the project requirements.</p>
+        <p><strong>UK-SPEC evidence:</strong> B3, D2, E4.</p>
+      </article>
+    </section>
+
+    <section class="section card">
+      <h2>Evidence Sources</h2>
+      <ul>
+        <li>System architecture diagram showing Leo Rover, RPLIDAR, SLAM Toolbox, Nav2, frontier exploration, task manager, perception and manipulator interfaces.</li>
+        <li>RViz screenshot showing mapping/navigation evidence, costmaps, planned paths and robot state monitoring.</li>
+        <li>YouTube system demo and test video used as portfolio evidence.</li>
+        <li>Team GitHub repository containing the rover project design and engineering code.</li>
+      </ul>
+    </section>
+
+    <p class="small">This page is a concise evidence summary for CPD portfolio assessment and later UK-SPEC reflection. It is not intended to replace the full team repository, project report or demonstration video.</p>
+  </main>
+</body>
+</html>
